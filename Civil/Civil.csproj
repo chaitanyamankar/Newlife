@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2535C49F-61CF-4A3C-997F-966DF34B7DE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Civil</RootNamespace>
+    <AssemblyName>Civil</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addelectricioan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addelectricioan.Designer.cs">
+      <DependentUpon>addelectricioan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addfabricator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addfabricator.Designer.cs">
+      <DependentUpon>addfabricator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Site Information\addsite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site Information\addsite.Designer.cs">
+      <DependentUpon>addsite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cividatanewDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cividatanewDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="civildataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>civildataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dailyuse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dailyuse.Designer.cs">
+      <DependentUpon>Dailyuse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment Information\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment Information\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Site Information\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site Information\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Details\addemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Details\addemployee.Designer.cs">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Site Information\sitedetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site Information\sitedetails.Designer.cs">
+      <DependentUpon>sitedetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Site Information\Viewexistingsite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Site Information\Viewexistingsite.Designer.cs">
+      <DependentUpon>Viewexistingsite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Details\Viewlabourinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Details\Viewlabourinfo.Designer.cs">
+      <DependentUpon>Viewlabourinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewvendorinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewvendorinfo.Designer.cs">
+      <DependentUpon>Viewvendorinfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addelectricioan.resx">
+      <DependentUpon>addelectricioan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Details\addemployee.resx">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addfabricator.resx">
+      <DependentUpon>addfabricator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Site Information\addsite.resx">
+      <DependentUpon>addsite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment Information\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Site Information\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Site Information\sitedetails.resx">
+      <DependentUpon>sitedetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Site Information\Viewexistingsite.resx">
+      <DependentUpon>Viewexistingsite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Details\Viewlabourinfo.resx">
+      <DependentUpon>Viewlabourinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewvendorinfo.resx">
+      <DependentUpon>Viewvendorinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet.xsc">
+      <DependentUpon>cividatanewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet.xss">
+      <DependentUpon>cividatanewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet1.xsc">
+      <DependentUpon>cividatanewDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet1.xss">
+      <DependentUpon>cividatanewDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet2.xsc">
+      <DependentUpon>cividatanewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet2.xss">
+      <DependentUpon>cividatanewDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet3.xsc">
+      <DependentUpon>cividatanewDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet3.xss">
+      <DependentUpon>cividatanewDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet4.xsc">
+      <DependentUpon>cividatanewDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet4.xss">
+      <DependentUpon>cividatanewDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet5.xsc">
+      <DependentUpon>cividatanewDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet5.xss">
+      <DependentUpon>cividatanewDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet6.xsc">
+      <DependentUpon>cividatanewDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet6.xss">
+      <DependentUpon>cividatanewDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet7.xsc">
+      <DependentUpon>cividatanewDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet7.xss">
+      <DependentUpon>cividatanewDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet8.xsc">
+      <DependentUpon>cividatanewDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="cividatanewDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cividatanewDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cividatanewDataSet8.xss">
+      <DependentUpon>cividatanewDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="civildataDataSet.xsc">
+      <DependentUpon>civildataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="civildataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>civildataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="civildataDataSet.xss">
+      <DependentUpon>civildataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

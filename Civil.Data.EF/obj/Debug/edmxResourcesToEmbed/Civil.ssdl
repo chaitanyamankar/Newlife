@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cividatanewModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="cividatanewModelStoreContainer">
+    <EntitySet Name="electricion" EntityType="cividatanewModel.Store.electricion" store:Type="Tables" store:Schema="dbo" store:Name="electricion">
+      <DefiningQuery>SELECT 
+      [electricion].[electricionid] AS [electricionid], 
+      [electricion].[name] AS [name], 
+      [electricion].[address] AS [address], 
+      [electricion].[mobilenumber] AS [mobilenumber], 
+      [electricion].[pointrate] AS [pointrate]
+      FROM [dbo].[electricion] AS [electricion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="employee" EntityType="cividatanewModel.Store.employee" store:Type="Tables" store:Schema="dbo" store:Name="employee">
+      <DefiningQuery>SELECT 
+      [employee].[employeeid] AS [employeeid], 
+      [employee].[firstname] AS [firstname], 
+      [employee].[middlename] AS [middlename], 
+      [employee].[lastname] AS [lastname], 
+      [employee].[address] AS [address], 
+      [employee].[joindate] AS [joindate], 
+      [employee].[moblienumber] AS [moblienumber]
+      FROM [dbo].[employee] AS [employee]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="fabricator" EntityType="cividatanewModel.Store.fabricator" store:Type="Tables" store:Schema="dbo" store:Name="fabricator">
+      <DefiningQuery>SELECT 
+      [fabricator].[fabricatorid] AS [fabricatorid], 
+      [fabricator].[name] AS [name], 
+      [fabricator].[address] AS [address], 
+      [fabricator].[squarefeet] AS [squarefeet], 
+      [fabricator].[runningfeet] AS [runningfeet], 
+      [fabricator].[mobilenumber] AS [mobilenumber]
+      FROM [dbo].[fabricator] AS [fabricator]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="newsite" EntityType="cividatanewModel.Store.newsite" store:Type="Tables" store:Schema="dbo" store:Name="newsite">
+      <DefiningQuery>SELECT 
+      [newsite].[siteid] AS [siteid], 
+      [newsite].[sitename] AS [sitename], 
+      [newsite].[siteaddress] AS [siteaddress], 
+      [newsite].[sitearea] AS [sitearea], 
+      [newsite].[architecturename] AS [architecturename], 
+      [newsite].[constructiontype] AS [constructiontype], 
+      [newsite].[timetocomplete] AS [timetocomplete], 
+      [newsite].[totalapproximatecost] AS [totalapproximatecost], 
+      [newsite].[startdate] AS [startdate], 
+      [newsite].[status] AS [status]
+      FROM [dbo].[newsite] AS [newsite]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'cividatanew.dbo.electricion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="electricion">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="mobilenumber" />
+      <PropertyRef Name="pointrate" />
+    </Key>
+    <Property Name="electricionid" Type="int" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="mobilenumber" Type="int" Nullable="false" />
+    <Property Name="pointrate" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'cividatanew.dbo.employee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employeeid" />
+      <PropertyRef Name="firstname" />
+      <PropertyRef Name="middlename" />
+      <PropertyRef Name="lastname" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="joindate" />
+      <PropertyRef Name="moblienumber" />
+    </Key>
+    <Property Name="employeeid" Type="int" Nullable="false" />
+    <Property Name="firstname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="middlename" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="lastname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="joindate" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="moblienumber" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'cividatanew.dbo.fabricator' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="fabricator">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="squarefeet" />
+      <PropertyRef Name="runningfeet" />
+      <PropertyRef Name="mobilenumber" />
+    </Key>
+    <Property Name="fabricatorid" Type="int" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="squarefeet" Type="float" Nullable="false" />
+    <Property Name="runningfeet" Type="float" Nullable="false" />
+    <Property Name="mobilenumber" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'cividatanew.dbo.newsite' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="newsite">
+    <Key>
+      <PropertyRef Name="sitename" />
+      <PropertyRef Name="siteaddress" />
+      <PropertyRef Name="sitearea" />
+      <PropertyRef Name="architecturename" />
+      <PropertyRef Name="constructiontype" />
+      <PropertyRef Name="timetocomplete" />
+      <PropertyRef Name="totalapproximatecost" />
+    </Key>
+    <Property Name="siteid" Type="int" />
+    <Property Name="sitename" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="siteaddress" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="sitearea" Type="int" Nullable="false" />
+    <Property Name="architecturename" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="constructiontype" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="timetocomplete" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="totalapproximatecost" Type="int" Nullable="false" />
+    <Property Name="startdate" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'cividatanew.dbo.login' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="login">
+        <Property Name="username" Type="nvarchar" MaxLength="50" />
+        <Property Name="password" Type="nvarchar" MaxLength="50" />
+      </EntityType>-->
+</Schema>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cividatanewModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="cividatanewEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="electricions" EntityType="cividatanewModel.electricion" />
+    <EntitySet Name="employees" EntityType="cividatanewModel.employee" />
+    <EntitySet Name="fabricators" EntityType="cividatanewModel.fabricator" />
+    <EntitySet Name="newsites" EntityType="cividatanewModel.newsite" />
+  </EntityContainer>
+  <EntityType Name="electricion">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="mobilenumber" />
+      <PropertyRef Name="pointrate" />
+    </Key>
+    <Property Name="electricionid" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="mobilenumber" Type="Int32" Nullable="false" />
+    <Property Name="pointrate" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employeeid" />
+      <PropertyRef Name="firstname" />
+      <PropertyRef Name="middlename" />
+      <PropertyRef Name="lastname" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="joindate" />
+      <PropertyRef Name="moblienumber" />
+    </Key>
+    <Property Name="employeeid" Type="Int32" Nullable="false" />
+    <Property Name="firstname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="middlename" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="lastname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="joindate" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="moblienumber" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="fabricator">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="squarefeet" />
+      <PropertyRef Name="runningfeet" />
+      <PropertyRef Name="mobilenumber" />
+    </Key>
+    <Property Name="fabricatorid" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="squarefeet" Type="Double" Nullable="false" />
+    <Property Name="runningfeet" Type="Double" Nullable="false" />
+    <Property Name="mobilenumber" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="newsite">
+    <Key>
+      <PropertyRef Name="sitename" />
+      <PropertyRef Name="siteaddress" />
+      <PropertyRef Name="sitearea" />
+      <PropertyRef Name="architecturename" />
+      <PropertyRef Name="constructiontype" />
+      <PropertyRef Name="timetocomplete" />
+      <PropertyRef Name="totalapproximatecost" />
+    </Key>
+    <Property Name="siteid" Type="Int32" />
+    <Property Name="sitename" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="siteaddress" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="sitearea" Type="Int32" Nullable="false" />
+    <Property Name="architecturename" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="constructiontype" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="timetocomplete" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="totalapproximatecost" Type="Int32" Nullable="false" />
+    <Property Name="startdate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

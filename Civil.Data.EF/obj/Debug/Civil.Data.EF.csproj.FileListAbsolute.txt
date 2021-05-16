@@ -1,0 +1,18 @@
+D:\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.dll.config
+D:\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.dll
+D:\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.pdb
+D:\Civil project\Civil\Civil.Data.EF\obj\Debug\ResolveAssemblyReference.cache
+D:\Civil project\Civil\Civil.Data.EF\obj\Debug\Civil.Data.EF.dll
+D:\Civil project\Civil\Civil.Data.EF\obj\Debug\Civil.Data.EF.pdb
+C:\Documents and Settings\Owner\My Documents\Downloads\Civil project\Civil\Civil.Data.EF\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Owner\My Documents\Downloads\Civil project\Civil\Civil.Data.EF\obj\Debug\Civil.Data.EF.dll
+C:\Documents and Settings\Owner\My Documents\Downloads\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.dll.config
+C:\Documents and Settings\Owner\My Documents\Downloads\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.dll
+C:\Documents and Settings\Owner\My Documents\Downloads\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.pdb
+C:\Documents and Settings\Owner\My Documents\Downloads\Civil project\Civil\Civil.Data.EF\obj\Debug\Civil.Data.EF.pdb
+E:\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.dll.config
+E:\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.dll
+E:\Civil project\Civil\Civil.Data.EF\bin\Debug\Civil.Data.EF.pdb
+E:\Civil project\Civil\Civil.Data.EF\obj\Debug\ResolveAssemblyReference.cache
+E:\Civil project\Civil\Civil.Data.EF\obj\Debug\Civil.Data.EF.dll
+E:\Civil project\Civil\Civil.Data.EF\obj\Debug\Civil.Data.EF.pdb

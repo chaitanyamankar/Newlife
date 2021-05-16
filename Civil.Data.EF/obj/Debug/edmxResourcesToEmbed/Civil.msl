@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cividatanewModelStoreContainer" CdmEntityContainer="cividatanewEntities">
+    <EntitySetMapping Name="electricions">
+      <EntityTypeMapping TypeName="cividatanewModel.electricion">
+        <MappingFragment StoreEntitySet="electricion">
+          <ScalarProperty Name="electricionid" ColumnName="electricionid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="mobilenumber" ColumnName="mobilenumber" />
+          <ScalarProperty Name="pointrate" ColumnName="pointrate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="cividatanewModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="employeeid" ColumnName="employeeid" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="joindate" ColumnName="joindate" />
+          <ScalarProperty Name="moblienumber" ColumnName="moblienumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fabricators">
+      <EntityTypeMapping TypeName="cividatanewModel.fabricator">
+        <MappingFragment StoreEntitySet="fabricator">
+          <ScalarProperty Name="fabricatorid" ColumnName="fabricatorid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="squarefeet" ColumnName="squarefeet" />
+          <ScalarProperty Name="runningfeet" ColumnName="runningfeet" />
+          <ScalarProperty Name="mobilenumber" ColumnName="mobilenumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="newsites">
+      <EntityTypeMapping TypeName="cividatanewModel.newsite">
+        <MappingFragment StoreEntitySet="newsite">
+          <ScalarProperty Name="siteid" ColumnName="siteid" />
+          <ScalarProperty Name="sitename" ColumnName="sitename" />
+          <ScalarProperty Name="siteaddress" ColumnName="siteaddress" />
+          <ScalarProperty Name="sitearea" ColumnName="sitearea" />
+          <ScalarProperty Name="architecturename" ColumnName="architecturename" />
+          <ScalarProperty Name="constructiontype" ColumnName="constructiontype" />
+          <ScalarProperty Name="timetocomplete" ColumnName="timetocomplete" />
+          <ScalarProperty Name="totalapproximatecost" ColumnName="totalapproximatecost" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
